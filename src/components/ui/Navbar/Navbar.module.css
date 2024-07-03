@@ -1,13 +1,14 @@
 .navbarContainer{
-  position: absolute;
+  /* position: absolute; */
 	top: 0;
 	left: 0;
 	right: 0;
 	align-items: center;
-	background-color: transparent;
+	background-color: #0A79FB;
 	display: flex;
 	justify-content: space-between;
   padding: 15px 20px;
+  /* border: solid #0A79FB 3px */
 }
 
 .navbarDetail{

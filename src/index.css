@@ -3,6 +3,11 @@ body {
   padding: 0;
   box-sizing: border-box;
   background-color: #000000;
-  font-family: 'Roboto', sans-serif;
+  font-family: "Roboto", sans-serif;
   color: #fff;
+  /* border: solid red 3px; */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center; */
 }
