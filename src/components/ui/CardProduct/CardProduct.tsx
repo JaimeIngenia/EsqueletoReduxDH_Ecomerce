@@ -1,24 +1,28 @@
-import { FC, useContext } from "react";
+import { FC } from "react";
 import styles from "./CardProduct.module.css";
-import { CartContext } from "../../../context/CartContext";
 import { CartProduct, Product } from "../../../interface";
+import useCartContext from "../../../hooks/useCartContext";
+import { toast } from "sonner";
 
 interface Props {
   product: Product;
 }
 
 export const CardProduct: FC<Props> = ({ product }) => {
-  const { dispatch } = useContext(CartContext);
+  // const { dispatch } = useContext(CartContext);
+  const { dispatch } = useCartContext();
 
   const item: CartProduct = {
     id: product.id,
     name: product.name,
     image: product.image,
+    price: product.price,
     quantity: 1,
   };
 
   const addToCart = (item: CartProduct) => {
     dispatch({ type: "ADD_TO_CART", payload: item });
+    toast.success("Product added to cart");
   };
   return (
     <div className={styles.cardContainer}>

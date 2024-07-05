@@ -1,69 +1,70 @@
-.modalTable{
+.modalTable {
   background-color: rgb(0 0 0 / 0.92);
-	border-collapse: collapse;
-	border-radius: 5px;
-	border-spacing: 0;
-	color: #fff;
-	margin-top: 2rem;
-	padding: 1rem;
-	width: 100%;
+  border-collapse: collapse;
+  border-radius: 5px;
+  border-spacing: 0;
+  color: #fff;
+  margin-top: 2rem;
+  padding: 1rem;
+  width: 100%;
+  margin: 30px 0;
 }
 
-.modalTable tbody tr{
-	border-bottom: 1px solid #c0b9b95f;
+.modalTable tbody tr {
+  border-bottom: 1px solid #c0b9b95f;
 }
 
-.modalTable tbody tr:last-child{
-	border-bottom: none;
+.modalTable tbody tr:last-child {
+  border-bottom: none;
 }
 
-.modalTable tbody tr td{
-	padding: 10px;
-	text-align: center;
+.modalTable tbody tr td {
+  padding: 10px;
+  text-align: center;
 }
 
-
-.modalButtonAdd{
+.modalButtonAdd {
   all: unset;
-	background-color: #EDB00F;
-	border-radius: 5px;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	font-size: 1rem;
-	padding: 5px;
-	text-align: center;
-	width: 95%;
+  background-color: #edb00f;
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+  width: 95%;
 }
 
-.modalButtonRemove{
+.modalButtonRemove {
   all: unset;
-	background-color: #EDB00F;
-	border-radius: 5px;
-	border: none;
-	color: #fff;
-	cursor: pointer;
-	font-size: 1rem;
-	padding: 5px;
-	text-align: center;
-	width: 95%;
+  background-color: #ff0000;
+  /* background-color: #edb00f; */
+  border-radius: 5px;
+  border: none;
+  color: #fff;
+  cursor: pointer;
+  font-size: 1rem;
+  padding: 5px;
+  text-align: center;
+  width: 95%;
 }
 
-.modalTotalContainer{
+.modalTotalContainer {
   align-items: center;
-	display: flex;
-	justify-content: flex-end;
-	padding: 0.8rem;
+  display: flex;
+  justify-content: flex-end;
+  padding: 0.8rem;
 }
 
-@media (min-width: 768px){
-  .modalTotalContainer{
+@media (min-width: 768px) {
+  .modalTotalContainer {
     padding: 1rem 2rem;
   }
 }
 
-.modalTotalContainer h3{
+.modalTotalContainer h3 {
   color: #fff;
-	font-size: 1.5rem;
-	font-weight: 700;
+  font-size: 1.5rem;
+  font-weight: 700;
 }

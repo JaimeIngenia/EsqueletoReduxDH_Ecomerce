@@ -3,9 +3,9 @@ import ReactDOM from "react-dom/client";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import { LayoutMain } from "./components/Layouts/LayoutMain";
 import "./index.css";
-import Cart from "./pages/Cart/Cart";
 import Home from "./pages/Home/Home";
 import { CartProvider } from "./context/CartProvider";
+import Checkout from "./pages/Checkout/Checkout";
 
 const router = createBrowserRouter([
   {
@@ -13,7 +13,7 @@ const router = createBrowserRouter([
     element: <LayoutMain />,
     children: [
       { index: true, element: <Home /> },
-      { path: "/cart", element: <Cart /> },
+      { path: "/checkout", element: <Checkout /> },
     ],
   },
 ]);
