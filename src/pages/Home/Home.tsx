@@ -8,7 +8,14 @@ import { Toaster } from "sonner";
 import { useQuery } from "react-query";
 
 const Home = () => {
-  const { data, isLoading, error } = useQuery("products", getProducts);
+  const [page, setPage] = useState(1);
+
+  // const { data, isLoading, error } = useQuery("products", getProducts);
+  const { data, isLoading, error } = useQuery(
+    ["products", page],
+    () => getProducts(page),
+    { keepPreviousData: true }
+  );
 
   // const [products, setProducts] = useState<Product[]>([]);
   // const [error, setError] = useState(false);
@@ -38,6 +45,24 @@ const Home = () => {
         {data?.map((product) => (
           <CardProduct key={product.tail} product={product} />
         ))}
+      </div>
+      <div className={styles.paginationContainer}>
+        <button
+          onClick={() => setPage(page - 1)}
+          className={styles.paginationButton}
+          disabled={page === 1}
+        >
+          Previous Page
+        </button>
+        <div className={styles.paginationActive}>
+          <span>{page}</span>
+        </div>
+        <button
+          onClick={() => setPage(page + 1)}
+          className={styles.paginationButton}
+        >
+          Next Page
+        </button>
       </div>
     </>
   );
