@@ -4,6 +4,8 @@ import { useEffect, useState } from "react";
 import { useMutation } from "react-query";
 import { Product } from "../../interface";
 import { createProduct } from "../../service";
+import { toast } from "sonner";
+import { Toaster } from "sonner";
 
 function Dashboard() {
   const [product, setProduct] = useState({
@@ -50,10 +52,26 @@ function Dashboard() {
     e.preventDefault();
     // console.log(product);
     mutation.mutate(product);
+
+    setProduct({
+      amiiboSeries: "",
+      character: "",
+      gameSeries: "",
+      head: "",
+      image: "",
+      name: "",
+      releaseDate: "",
+      tail: "",
+      type: "",
+      price: 0,
+    });
+
+    toast.success("Product added");
   };
 
   return (
     <div className={styles.container}>
+      <Toaster richColors visibleToasts={1} />
       <div
         style={{
           display: "flex",

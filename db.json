@@ -15150,6 +15150,32 @@
       "type": "Mario",
       "price": "177",
       "id": 841
+    },
+    {
+      "amiiboSeries": "a",
+      "character": "b",
+      "gameSeries": "c",
+      "head": "d",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFTgBoJ40F1vSuBesFRIVI5au4RDAGFy3SQ&s",
+      "name": "ElAlquimistaErrante",
+      "releaseDate": "2024-07-07",
+      "tail": "g",
+      "type": "h",
+      "price": "1",
+      "id": 842
+    },
+    {
+      "amiiboSeries": "a",
+      "character": "b",
+      "gameSeries": "c",
+      "head": "d",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFTgBoJ40F1vSuBesFRIVI5au4RDAGFy3SQ&s",
+      "name": "f",
+      "releaseDate": "2024-07-07",
+      "tail": "g",
+      "type": "h",
+      "price": "2",
+      "id": 843
     }
   ]
 }
