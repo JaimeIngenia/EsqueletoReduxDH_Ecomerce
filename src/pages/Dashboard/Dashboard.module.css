@@ -3,7 +3,7 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  height: 100vh; 
+  /* height: 100vh;  */
   margin-top: 50px;
 }
 
@@ -28,7 +28,7 @@ input {
 button {
   padding: 10px 20px;
   background-color: #007bff;
-  color: #fff; 
+  color: #fff;
   border: none;
   border-radius: 5px;
   cursor: pointer;

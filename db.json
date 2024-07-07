@@ -15137,6 +15137,19 @@
       "type": "Figure",
       "id": 840,
       "price": 164
+    },
+    {
+      "amiiboSeries": "Prueba",
+      "character": "Mario Prueba",
+      "gameSeries": "Pruebas de mutation",
+      "head": "Mutation",
+      "image": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTHFTgBoJ40F1vSuBesFRIVI5au4RDAGFy3SQ&s",
+      "name": "Mario Prueba",
+      "releaseDate": "2024-07-07",
+      "tail": "Hola",
+      "type": "Mario",
+      "price": "177",
+      "id": 841
     }
   ]
 }

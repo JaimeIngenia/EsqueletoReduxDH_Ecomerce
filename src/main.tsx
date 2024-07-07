@@ -7,6 +7,8 @@ import Home from "./pages/Home/Home";
 import { CartProvider } from "./context/CartProvider";
 import Checkout from "./pages/Checkout/Checkout";
 import { QueryClient, QueryClientProvider } from "react-query";
+import Login from "./pages/Login/Login";
+import Dashboard from "./pages/Dashboard/Dashboard";
 
 const queryClient = new QueryClient(); // Creamos la insta de react-query
 
@@ -18,6 +20,14 @@ const router = createBrowserRouter([
       { index: true, element: <Home /> },
       { path: "/checkout", element: <Checkout /> },
     ],
+  },
+  {
+    path: "/login",
+    element: <Login />,
+  },
+  {
+    path: "/dashboard",
+    element: <Dashboard />,
   },
 ]);
 
